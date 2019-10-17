@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Webnar-regular";
+    src: url("../fonts/WEBNAR-REGULAR.OTF"),
+    url("../fonts/Webnar-Regular.ttf"),
+    url("../fonts/Webnar-Regular.eot"),
+    url("../fonts/Webnar-Regular.woff"),
+    url("../fonts/Webnar-Regular.svg");
+}
+
+@font-face {
+    font-family: "Webnar-italic";
+    font-style: italic;
+    src: url("../fonts/WEBNAR-REGULARITALIC.OTF"),
+    url("../fonts/Webnar-RegularItalic.ttf"),
+    url("../fonts/Webnar-RegularItalic.eot"),
+    url("../fonts/Webnar-RegularItalic.woff"),
+    url("../fonts/Webnar-RegularItalic.svg");
+}
+
+@font-face {
+    font-family: "Webnar-bold";
+    font-weight: bold;
+    src: url("../fonts/WEBNAR-BOLD.OTF"),
+    url("../fonts/Webnar-Bold.ttf"),
+    url("../fonts/Webnar-Bold.eot"),
+    url("../fonts/Webnar-Bold.woff"),
+    url("../fonts/Webnar-Bold.svg");
+}
+
+@font-face {
+    font-family: "Webnar-bold_italic";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/WEBNAR-BOLDITALIC.OTF"),
+    url("../fonts/Webnar-BoldItalic.ttf"),
+    url("../fonts/Webnar-BoldItalic.eot"),
+    url("../fonts/Webnar-BoldItalic.woff"),
+    url("../fonts/Webnar-BoldItalic.svg");
+}
+
+@font-face {
+    font-family: "Webnar-thin";
+    font-weight: 100;
+    src: url("../fonts/WEBNAR-THIN.OTF"),
+    url("../fonts/Webnar-Thin.ttf"),
+    url("../fonts/Webnar-Thin.eot"),
+    url("../fonts/Webnar-Thin.woff"),
+    url("../fonts/Webnar-Thin.svg");
+}
