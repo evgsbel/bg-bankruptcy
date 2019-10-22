@@ -61,7 +61,9 @@
   .slider-arrow_prev {
     left: 0; }
   .slider-arrow_next {
-    right: 0; } }
+    right: 0; }
+  .footer__copy {
+    line-height: 1; } }
 
 @media (max-width: 575.98px) {
   .modal-form {
