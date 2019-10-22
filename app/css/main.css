@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Webnar-regular";
   src: url("../fonts/WEBNAR-REGULAR.OTF"), url("../fonts/Webnar-Regular.ttf"), url("../fonts/Webnar-Regular.eot"), url("../fonts/Webnar-Regular.woff"), url("../fonts/Webnar-Regular.svg"); }
@@ -71,7 +72,7 @@ p {
   width: 47px;
   height: 47px;
   background: #FFFFFF;
-  border: 2px solid #006298;
+  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
@@ -81,9 +82,9 @@ p {
   position: absolute; }
   .slider-arrow:focus {
     outline: none;
-    border: 2px solid #006298; }
+    border: 0; }
   .slider-arrow svg {
-    stroke: #006298;
+    stroke: #000;
     -webkit-transition: color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
@@ -92,12 +93,12 @@ p {
   .slider-arrow:hover svg {
     stroke: #fff; }
   .slider-arrow_prev {
-    left: -50px; }
+    left: -25px; }
   .slider-arrow_next {
-    right: -50px; }
+    right: -25px; }
   .slider-arrow__wrapper {
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 100%; }
 
 .dots {
@@ -158,7 +159,19 @@ p {
     padding-bottom: 17px; }
   .header__info {
     color: #fff;
-    padding-top: 10px; }
+    padding-top: 10px;
+    position: relative;
+    padding-left: 25px; }
+    .header__info:before {
+      content: '';
+      display: block;
+      width: 17px;
+      height: 17px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0826 17C14.0081 17 13.9336 17 13.8591 17C11.4747 16.7043 9.09039 15.8913 7.07858 14.6348C5.2158 13.4522 3.57655 11.8261 2.38436 9.97826C1.04316 7.98261 0.223534 5.61739 0 3.25217C0 2.66087 0.149023 2.06957 0.52158 1.62609C0.894136 1.18261 1.41572 0.886957 2.01181 0.813043C2.08632 0.813043 2.16083 0.813043 2.23534 0.813043H4.47068C5.58835 0.813043 6.557 1.62609 6.70602 2.73478C6.78053 3.4 6.92956 4.06522 7.15309 4.65652C7.45114 5.46956 7.2276 6.35652 6.63151 7.02174L6.10993 7.53913C7.00407 8.86957 8.12174 10.0522 9.53745 10.9391L10.059 10.4217C10.6551 9.83043 11.6238 9.6087 12.4434 9.90435C13.0395 10.1261 13.7101 10.2739 14.3807 10.3478C15.4984 10.4957 16.318 11.4565 16.318 12.5652V14.7826C16.318 15.3739 16.0945 15.9652 15.6474 16.3348C15.2003 16.7043 14.6787 17 14.0826 17ZM4.47068 2.2913H2.23534C2.01181 2.2913 1.78827 2.43913 1.63925 2.58696C1.56474 2.73478 1.49023 2.88261 1.49023 3.10435C1.71376 5.24783 2.45887 7.31739 3.65106 9.16522C4.76873 10.8652 6.18444 12.3435 7.8982 13.3783C9.76099 14.5609 11.8473 15.3 14.0081 15.5217C14.3062 15.5217 14.4552 15.4478 14.6042 15.3C14.7533 15.1522 14.8278 15.0043 14.8278 14.7826V12.5652C14.8278 12.1957 14.5297 11.9 14.1572 11.8261C13.412 11.7522 12.6669 11.5304 11.9218 11.2348C11.6238 11.1609 11.3257 11.1609 11.1022 11.3826L10.1335 12.3435C9.91001 12.5652 9.53745 12.6391 9.23941 12.4913C7.2276 11.3826 5.58835 9.75652 4.47068 7.76087C4.39617 7.46522 4.47068 7.09565 4.69422 6.87391L5.66286 5.91304C5.81189 5.76522 5.8864 5.39565 5.81189 5.17391C5.51384 4.43478 5.36482 3.69565 5.2158 2.95652C5.2158 2.58696 4.84324 2.2913 4.47068 2.2913ZM13.3375 7.46522C12.965 7.46522 12.6669 7.24348 12.5924 6.87391C12.3689 5.6913 11.4002 4.80435 10.2081 4.5087C9.8355 4.43478 9.53745 4.06522 9.61197 3.62174C9.68648 3.25217 10.059 2.95652 10.5061 3.03043C12.2944 3.4 13.7101 4.73043 14.0081 6.50435C14.0826 6.87391 13.8591 7.31739 13.412 7.3913C13.412 7.3913 13.412 7.46522 13.3375 7.46522ZM16.318 7.3913C15.9454 7.3913 15.6474 7.09565 15.5729 6.72609C15.2748 3.9913 13.114 1.84783 10.2826 1.47826C9.91001 1.40435 9.61197 1.03478 9.61197 0.665217C9.61197 0.295652 10.059 0 10.4316 0C13.9336 0.369565 16.616 3.03044 16.9886 6.50435C17.0631 6.87391 16.7651 7.24348 16.318 7.31739C16.3925 7.3913 16.318 7.3913 16.318 7.3913Z' fill='white'/%3E%3C/svg%3E%0A");
+      position: absolute;
+      top: 45px;
+      left: 0; }
   .header__city {
     font-size: 16px; }
   .header__phone {
@@ -389,6 +402,76 @@ p {
     font-size: 25px;
     line-height: 30px; }
 
+.advantages {
+  background-image: url("data:image/svg+xml,%3Csvg width='1203' height='832' viewBox='0 0 1203 832' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.05' fill-rule='evenodd' clip-rule='evenodd' d='M599.694 831.975L0 228.596L227.595 0.974609H975.405L1203 228.596L599.694 831.975ZM177.018 228.596L278.172 127.431H924.83L1025.98 228.596L599.694 651.322L177.018 228.596Z' fill='%23006298'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  height: 1200px; }
+  .advantages__round {
+    background: #fff;
+    width: 236px;
+    height: 236px;
+    border-radius: 50%;
+    position: relative; }
+    .advantages__round:after {
+      display: block;
+      color: #06679C;
+      font-size: 25px;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-family: "Webnar-bold";
+      position: absolute; }
+    .advantages__round:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: cover; }
+    .advantages__round_first {
+      margin-top: 100px;
+      margin-left: 100px; }
+      .advantages__round_first:after {
+        content: 'Завершение всех исполнительных производств';
+        width: 294px;
+        height: 84px;
+        position: absolute;
+        top: -80px;
+        right: -220px; }
+      .advantages__round_first:before {
+        background: url("../img/adv-01.png") no-repeat;
+        width: 765px;
+        height: 733px;
+        top: -360px;
+        left: -400px; }
+    .advantages__round_second {
+      margin-top: 140px; }
+      .advantages__round_second:after {
+        content: 'Прекращение звонков от коллекторских агентств';
+        width: 205px;
+        height: 120px;
+        top: 10px;
+        left: -50px; }
+      .advantages__round_second:before {
+        background: url("../img/adv-02.png") no-repeat;
+        width: 580px;
+        height: 640px;
+        top: -190px;
+        left: -280px; }
+    .advantages__round_third {
+      margin-top: 50px; }
+      .advantages__round_third:after {
+        content: 'Полное списание любой задолженности';
+        width: 221px;
+        height: 90px;
+        top: 30%;
+        right: -100px; }
+      .advantages__round_third:before {
+        background: url("../img/adv-03.png") no-repeat;
+        width: 510px;
+        height: 610px;
+        top: -120px;
+        left: -330px; }
+
 .price__subtitle {
   color: #727272;
   font-size: 25px;
@@ -502,6 +585,32 @@ p {
   text-align: center;
   text-transform: uppercase; }
 
+.video__item {
+  position: relative;
+  cursor: pointer; }
+
+.video__hide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 98, 152, 0.8);
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: 0; }
+
+.video__play {
+  background: #fff;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); }
+
+.video__item:hover > .video__hide {
+  opacity: 1; }
+
 .contact {
   background: #F2F2F2;
   padding: 60px 0; }
@@ -557,13 +666,14 @@ p {
 
 .footer {
   background: url(../img/blur.png) no-repeat top center #006198;
-  color: #fff; }
+  color: #fff;
+  background-size: cover; }
   .footer__logo {
-    padding-right: 16px;
+    padding-right: 15px;
     border-right: 1px solid #fff; }
   .footer__copy {
     font-size: 15px;
-    padding-left: 19px; }
+    padding-left: 15px; }
   .footer__link {
     text-decoration: underline;
     color: #fff;
@@ -571,3 +681,20 @@ p {
     line-height: 18px;
     margin-bottom: 25px;
     display: block; }
+    .footer__link:hover {
+      color: #fff;
+      text-decoration: none; }
+  .footer__social-icon {
+    background-color: #fff;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out; }
+    .footer__social-icon svg {
+      fill: #006198; }
+    .footer__social-icon:hover {
+      background-color: #0F92DA; }
+    .footer__social-icon:hover > svg {
+      fill: #fff; }
