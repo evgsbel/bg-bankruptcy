@@ -43,8 +43,9 @@
     margin: 30px 15px !important; }
   .advantages__round:after {
     position: relative;
-    left: 30%;
-    top: 30%; }
+    left: 0;
+    top: 30%;
+    right: 0; }
   .faq__card-header {
     padding-left: 20px; }
   .faq__btn:before {
@@ -56,7 +57,11 @@
   .footer .header__info {
     padding-left: 15px;
     margin: 10px 0;
-    text-align: left; } }
+    text-align: left; }
+  .slider-arrow_prev {
+    left: 0; }
+  .slider-arrow_next {
+    right: 0; } }
 
 @media (max-width: 575.98px) {
   .modal-form {
