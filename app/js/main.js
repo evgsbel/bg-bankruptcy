@@ -21,3 +21,14 @@ $('.video__slider-js').owlCarousel({
         }
     }
 });
+
+$('.top-form__next-js').click(function () {
+    event.preventDefault();
+    $('.top-form__first').hide();
+    $('.top-form__second').show();
+});
+$('.top-form__back-js').click(function () {
+    event.preventDefault();
+    $('.top-form__second').hide();
+    $('.top-form__first').show();
+});

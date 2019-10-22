@@ -1,0 +1,67 @@
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%; }
+  .dots:after, .dots:before, .advantages__round:before {
+    content: none; }
+  .header__phone {
+    font-size: 20px; }
+  .top-nav__link {
+    padding: 16px 3px; } }
+
+@media (max-width: 991.98px) {
+  .top-nav {
+    display: none !important; }
+  .header__btn {
+    margin: 20px auto 0; }
+  .header__subtitle {
+    margin-bottom: 20px; }
+  .steps__nav-link {
+    margin-bottom: 20px; }
+    .steps__nav-link:before {
+      content: none; }
+  .faq__btn {
+    font-size: 17px; }
+  .footer__social-icon {
+    margin-right: 10px; } }
+
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 23px; }
+  .header__info {
+    text-align: center; }
+    .header__info:before {
+      content: none; }
+  .header__offices {
+    display: none; }
+  .header__title {
+    font-size: 26px; }
+  .header__subtitle {
+    font-size: 20px; }
+  .steps__icon-text {
+    max-width: 70%; }
+  .advantages__round {
+    margin: 30px 15px !important; }
+  .advantages__round:after {
+    position: relative;
+    left: 30%;
+    top: 30%; }
+  .faq__card-header {
+    padding-left: 20px; }
+  .faq__btn:before {
+    top: 19%; }
+  .why__item {
+    margin-bottom: 20px; }
+  .contact__nav-item {
+    margin: 10px auto; }
+  .footer .header__info {
+    padding-left: 15px;
+    margin: 10px 0;
+    text-align: left; } }
+
+@media (max-width: 575.98px) {
+  .modal-form {
+    max-width: 100%; } }
+
+@media (max-width: 374.98px) {
+  .steps__icon-text {
+    max-width: 60%; } }

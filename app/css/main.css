@@ -698,3 +698,7 @@ p {
       background-color: #0F92DA; }
     .footer__social-icon:hover > svg {
       fill: #fff; }
+
+.modal-form {
+  display: none;
+  max-width: 500px; }
