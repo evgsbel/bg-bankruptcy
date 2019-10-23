@@ -415,6 +415,11 @@ p {
   background-repeat: no-repeat;
   background-color: #f2f2f2;
   height: 1200px; }
+  .advantages__title {
+    display: none;
+    color: #06679C;
+    font-family: "Webnar-bold";
+    font-size: 20px; }
   .advantages__round {
     background: #fff;
     width: 236px;
@@ -595,7 +600,6 @@ p {
   text-align: center; }
 
 .why__text {
-  font-family: "Webnar-bold";
   text-align: center;
   text-transform: uppercase; }
 
